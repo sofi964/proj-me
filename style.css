@@ -1,0 +1,329 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-style: inherit;
+}
+
+body {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  text-align: left;
+  background-color: #fff;
+}
+
+/*start of navbar*/
+.navbar {
+  height: 9vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fdfdfd;
+  position: fixed;
+  z-index: 1000;
+}
+.navbar .logo {
+  color: #0538af;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-left: 100px;
+  font-weight: 600;
+}
+.navbar ul {
+  display: flex;
+  gap: 30px;
+  margin-right: 100px;
+}
+.navbar ul a {
+  font-size: 20px;
+  text-transform: capitalize;
+  color: #3a6cf4;
+}
+.navbar ul a:hover {
+  color: #3a6cf4;
+}
+
+/*big*/
+/*medium*/
+@media (max-width: 992px) {
+  .navbar ul a {
+    position: relative;
+    right: 270px;
+  }
+}
+/*small*/
+@media (max-width: 768px) {
+  .navbar .logo {
+    font-size: 20px;
+    position: relative;
+    right: 75px;
+    margin-right: 0px;
+  }
+  .navbar ul a {
+    font-size: 14px;
+    position: relative;
+    right: 40px;
+  }
+}
+/*end of navbar*/
+/*start of landing page*/
+section {
+  background: url(image/download.jpeg);
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+}
+section .landing-page .parg-landing {
+  text-transform: capitalize;
+  font-size: 28px;
+  position: relative;
+  top: 18rem;
+  left: 10rem;
+  color: #fff;
+}
+section .landing-page .parg-landing p {
+  font-size: 20px;
+  font-weight: 800;
+}
+section .landing-page .parg-landing button {
+  font-size: 20px;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 20px;
+  margin: 30px 0;
+  background: #3a6cf4;
+  color: #fff;
+}
+section .landing-page .parg-landing button:hover {
+  transform: scale(1.1);
+  background: #002272;
+}
+section .landing-page .parg-landing .icons-landing {
+  color: #ffffff;
+}
+section .landing-page .parg-landing .icons-landing i {
+  padding-left: 20px;
+}
+
+/*big*/
+/*medium*/
+/*small*/
+@media (max-width: 768px) {
+  section .landing-page .parg-landing {
+    font-size: 16px;
+    position: absolute;
+    left: 10%;
+  }
+  section .landing-page .parg-landing p {
+    margin-top: 10px;
+  }
+  section .landing-page .parg-landing button {
+    font-size: 18px;
+  }
+}
+/* end of landing page*/
+/*start of srvice*/
+.service {
+  height: 80vh;
+  width: 100%;
+  background: #eae3e3;
+  text-align: center;
+}
+.service h1 {
+  position: relative;
+  top: 50px;
+  font-size: 40px;
+  color: #3a6cf4;
+}
+.service .cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 8rem;
+}
+.service .cards .card {
+  width: 250px;
+  background: #ffffff;
+  border-radius: 20px;
+  border-radius: 20px;
+}
+.service .cards .card p {
+  padding: 20px;
+}
+.service .cards .card i {
+  font-size: 110px;
+  padding: 50px 0;
+  color: #3a6cf4;
+}
+.service .cards .card h2 {
+  color: #3a6cf4;
+}
+.service .cards .card:hover {
+  transform: scale(1.1);
+  background: #c1c1c1;
+}
+
+/*big*/
+/*medium*/
+/*small*/
+@media (max-width: 768px) {
+  .service {
+    height: auto;
+  }
+  .service .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .service .cards .card {
+    margin-bottom: 50px;
+  }
+}
+/*end of srvice*/
+/*start of projects*/
+.projects {
+  background-image: none;
+  text-align: center;
+  text-transform: capitalize;
+  height: 120vh;
+  background: #000;
+}
+.projects h2 {
+  position: relative;
+  top: 50px;
+  font-size: 32px;
+  color: #3a6cf4;
+}
+.projects .proj-cards {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.projects .proj-cards .proj {
+  width: 18rem;
+  margin-top: 100px;
+  border: solid 1px rgb(255, 255, 255);
+  border-radius: 30px;
+  background: #fff;
+}
+.projects .proj-cards .proj .image img {
+  width: 18rem;
+  height: 12rem;
+  border-radius: 30px 30px 0 0;
+}
+.projects .proj-cards .proj .parg-proj p {
+  font-size: 15px;
+  margin: 20px 0;
+  width: 200px;
+  text-align: start;
+  margin-left: 20px;
+}
+.projects .proj-cards .proj .parg-proj .parg-last {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+.projects .proj-cards .proj .parg-proj .parg-last .more {
+  color: #3a6cf4;
+}
+.projects .proj-cards .proj:hover {
+  transform: scale(1.1);
+  background: #cecece;
+}
+
+/*big*/
+/*medium*/
+@media (max-width: 992px) {
+  .projects {
+    height: 200vh;
+  }
+}
+/*small*/
+@media (max-width: 768px) {
+  .projects {
+    height: 350vh;
+  }
+}
+/*end of projects*/
+/*start of contact*/
+.contact {
+  text-align: center;
+  background: #d0d0d0;
+}
+.contact .title {
+  position: relative;
+  top: 30px;
+  font-size: 28px;
+  color: #3a6cf4;
+}
+.contact .main {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+.contact .main .card-main {
+  width: 300px;
+  margin-top: 80px;
+  text-transform: capitalize;
+  box-shadow: black;
+  background: #fff;
+  border-radius: 20px;
+  margin-bottom: 100px;
+}
+.contact .main .card-main i {
+  font-size: 100px;
+  margin: 50px 0;
+  color: #3a6cf4;
+}
+.contact .main .card-main h4 {
+  font-size: 25px;
+  color: #3a6cf4;
+}
+.contact .main .card-main p {
+  margin: 30px 0;
+  text-transform: none;
+  margin-bottom: 70px;
+}
+.contact .main .card-main:hover {
+  transform: scale(1.1);
+  background: #a8a8a8;
+}
+
+/*end of contact*/
+/*start of footer*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: #000d2f;
+}
+footer .copy {
+  margin: 40px;
+  color: #fff;
+}
+footer .copy span {
+  color: #1246c1;
+  margin-left: 10px;
+}
+footer .icons {
+  margin: 40px;
+}
+footer .icons i {
+  font-size: 30px;
+  padding-left: 30px;
+  color: #fff;
+}
+
+/*end  of footer*//*# sourceMappingURL=style.css.map */
