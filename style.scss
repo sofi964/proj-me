@@ -392,6 +392,7 @@ body{
 
 /*big*/
 @media(max-width:1200px){
+    height: 100vh;
     
 }
 
@@ -407,7 +408,8 @@ body{
 /*small*/
 @media(max-width:768px){
    .projects{
-    height: 350vh;
+    height: 380vh;
+   
    }
 }
 
@@ -476,6 +478,11 @@ body{
 
 
    }
+
+ 
+
+
+
  /*end of contact*/
 
 

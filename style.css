@@ -253,7 +253,7 @@ section .landing-page .parg-landing .icons-landing i {
 /*small*/
 @media (max-width: 768px) {
   .projects {
-    height: 350vh;
+    height: 380vh;
   }
 }
 /*end of projects*/
